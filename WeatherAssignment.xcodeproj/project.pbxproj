@@ -21,7 +21,7 @@
 		AEDC0F3E23DDCA3A000C8D39 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDC0F3D23DDCA3A000C8D39 /* Constant.swift */; };
 		AEDC0F4423DDDFE9000C8D39 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDC0F4323DDDFE9000C8D39 /* LocationManager.swift */; };
 		AEDC0F4823DDE335000C8D39 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDC0F4723DDE335000C8D39 /* Entity.swift */; };
-		AEDC0F4C23DDE475000C8D39 /* WeatherListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDC0F4B23DDE475000C8D39 /* WeatherListProtocol.swift */; };
+		AEDC0F4C23DDE475000C8D39 /* LocationListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDC0F4B23DDE475000C8D39 /* LocationListProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +62,7 @@
 		AEDC0F3D23DDCA3A000C8D39 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		AEDC0F4323DDDFE9000C8D39 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		AEDC0F4723DDE335000C8D39 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
-		AEDC0F4B23DDE475000C8D39 /* WeatherListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListProtocol.swift; sourceTree = "<group>"; };
+		AEDC0F4B23DDE475000C8D39 /* LocationListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,7 +201,7 @@
 		AEDC0F4923DDE3A7000C8D39 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				AEDC0F4B23DDE475000C8D39 /* WeatherListProtocol.swift */,
+				AEDC0F4B23DDE475000C8D39 /* LocationListProtocol.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -352,7 +352,7 @@
 				AEDC0F3C23DDC988000C8D39 /* LocationCollectionViewController.swift in Sources */,
 				AEDC0F4823DDE335000C8D39 /* Entity.swift in Sources */,
 				AE615F6923DD870F004E8D0A /* SceneDelegate.swift in Sources */,
-				AEDC0F4C23DDE475000C8D39 /* WeatherListProtocol.swift in Sources */,
+				AEDC0F4C23DDE475000C8D39 /* LocationListProtocol.swift in Sources */,
 				AEDC0F3E23DDCA3A000C8D39 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

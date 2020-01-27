@@ -23,5 +23,6 @@ struct NetworkConstant{
     static let latitude = "lat="
     static let longitiude = "long="
     static let query = "q="
-    static let iconString = "http://openweathermap.org/img/w/idName.png"
+    static let iconString = "https://openweathermap.org/img/w/idName.png"
+    static let imageIdKey = "idName"
 }

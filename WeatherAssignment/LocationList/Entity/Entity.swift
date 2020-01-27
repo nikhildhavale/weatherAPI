@@ -16,4 +16,10 @@ class LocationItem {
         self.location = location
         self.name = name
     }
+    func getImageId() -> String?{
+        if let weather = weatherInfo?.list?.first?.weather?.first {
+           return weather.icon
+        }
+        return nil;
+    }
 }

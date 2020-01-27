@@ -27,6 +27,8 @@
 		AEFD1E9923DE80F900638F0D /* LocationListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFD1E9823DE80F900638F0D /* LocationListInteractor.swift */; };
 		AEFD1E9F23DE8B0E00638F0D /* LocationWeatherDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFD1E9E23DE8B0E00638F0D /* LocationWeatherDetailsViewController.swift */; };
 		AEFD1EA123DE8B4D00638F0D /* LocationWeatherDetailsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFD1EA023DE8B4D00638F0D /* LocationWeatherDetailsProtocol.swift */; };
+		F199B36023DEEC9400E04142 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F199B35F23DEEC9400E04142 /* CustomImageView.swift */; };
+		F199B36223DEECD800E04142 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F199B36123DEECD800E04142 /* ImageDownloader.swift */; };
 		F1A2614923DEA6AF006F397F /* LocationWeatherDetailWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A2614823DEA6AF006F397F /* LocationWeatherDetailWireFrame.swift */; };
 		F1A2614C23DEA890006F397F /* LocationWeatherDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A2614B23DEA890006F397F /* LocationWeatherDetailsPresenter.swift */; };
 		F1A2615123DEB05D006F397F /* LocationWeatherDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A2615023DEB05D006F397F /* LocationWeatherDetailsInteractor.swift */; };
@@ -78,6 +80,8 @@
 		AEFD1E9823DE80F900638F0D /* LocationListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListInteractor.swift; sourceTree = "<group>"; };
 		AEFD1E9E23DE8B0E00638F0D /* LocationWeatherDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWeatherDetailsViewController.swift; sourceTree = "<group>"; };
 		AEFD1EA023DE8B4D00638F0D /* LocationWeatherDetailsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWeatherDetailsProtocol.swift; sourceTree = "<group>"; };
+		F199B35F23DEEC9400E04142 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		F199B36123DEECD800E04142 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		F1A2614823DEA6AF006F397F /* LocationWeatherDetailWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationWeatherDetailWireFrame.swift; sourceTree = "<group>"; };
 		F1A2614B23DEA890006F397F /* LocationWeatherDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWeatherDetailsPresenter.swift; sourceTree = "<group>"; };
 		F1A2615023DEB05D006F397F /* LocationWeatherDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWeatherDetailsInteractor.swift; sourceTree = "<group>"; };
@@ -294,6 +298,8 @@
 		F1A2615523DEC5E2006F397F /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				F199B35F23DEEC9400E04142 /* CustomImageView.swift */,
+				F199B36123DEECD800E04142 /* ImageDownloader.swift */,
 				F1A2615323DEC5D6006F397F /* NetworkSession.swift */,
 			);
 			path = Network;
@@ -440,12 +446,14 @@
 				AEFD1E9F23DE8B0E00638F0D /* LocationWeatherDetailsViewController.swift in Sources */,
 				AEDC0F3923DDC7C1000C8D39 /* LocationViewCellCollectionViewCell.swift in Sources */,
 				AEDC0F4423DDDFE9000C8D39 /* LocationManager.swift in Sources */,
+				F199B36023DEEC9400E04142 /* CustomImageView.swift in Sources */,
 				AEDC0F5023DDE952000C8D39 /* LocationListPresenter.swift in Sources */,
 				F1A2614923DEA6AF006F397F /* LocationWeatherDetailWireFrame.swift in Sources */,
 				AEFD1E9923DE80F900638F0D /* LocationListInteractor.swift in Sources */,
 				AEDC0F3C23DDC988000C8D39 /* LocationCollectionViewController.swift in Sources */,
 				F1A2615723DEDAC5006F397F /* Extension.swift in Sources */,
 				AEDC0F4823DDE335000C8D39 /* Entity.swift in Sources */,
+				F199B36223DEECD800E04142 /* ImageDownloader.swift in Sources */,
 				AE615F6923DD870F004E8D0A /* SceneDelegate.swift in Sources */,
 				AEDC0F4C23DDE475000C8D39 /* LocationListProtocol.swift in Sources */,
 				F1A2614C23DEA890006F397F /* LocationWeatherDetailsPresenter.swift in Sources */,

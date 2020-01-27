@@ -63,10 +63,15 @@ class ForecastCollectionViewController: UICollectionViewController {
         return cell
     }
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        super.viewWillTransition(to: size, with: coordinator)
-        collectionViewLayout.invalidateLayout()
-        collectionView.reloadData()
-    }
+           if let flowLayout = collectionViewLayout as? UICollectionViewFlowLayout
+           {
+               flowLayout.estimatedItemSize = CGSize(width: size.width, height: 10)
+           }
+           collectionViewLayout.invalidateLayout()
+           collectionView.reloadData()
+           super.viewWillTransition(to: size, with: coordinator)
+           
+       }
     // MARK: UICollectionViewDelegate
 
     /*

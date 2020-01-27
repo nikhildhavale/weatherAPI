@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 extension Data {
     func printString(){
         
@@ -35,3 +36,4 @@ extension FileManager {
 //        return contains
 //    }
 }
+

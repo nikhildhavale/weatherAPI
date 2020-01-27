@@ -78,17 +78,17 @@
                                 <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </activityIndicatorView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hUJ-ao-rag">
-                                <rect key="frame" x="143" y="220" width="128" height="178"/>
+                                <rect key="frame" x="157" y="248" width="100" height="150"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gug-dz-Mrp" customClass="CustomImageView" customModule="WeatherAssignment" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="128" id="Wnc-PQ-chZ"/>
+                                            <constraint firstAttribute="height" constant="100" id="Wnc-PQ-chZ"/>
                                             <constraint firstAttribute="width" secondItem="Gug-dz-Mrp" secondAttribute="height" multiplier="1:1" id="fDB-UH-9Ax"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZmF-RG-W6A">
-                                        <rect key="frame" x="0.0" y="128" width="128" height="50"/>
+                                        <rect key="frame" x="0.0" y="100" width="100" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>

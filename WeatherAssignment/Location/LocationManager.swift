@@ -18,7 +18,7 @@ class LocationManager:NSObject,CLLocationManagerDelegate {
         super.init()
         manager.delegate = self
         manager.requestWhenInUseAuthorization()
-        manager.requestLocation()
+        manager.startUpdatingLocation()
     }
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         currentLocation = locations.first ?? WeatherUIConstant.defaultWeathLocation

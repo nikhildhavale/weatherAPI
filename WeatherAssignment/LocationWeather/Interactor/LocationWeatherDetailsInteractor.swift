@@ -8,7 +8,7 @@
 
 import Foundation
 class WeatherDetailsResponse:Codable {
-    var weather:[WeatherResponse]
+    var weather:[WeatherResponse]?
     var base:String?
     var main:MainWeatherResponse?
     var wind:WindResponse?
@@ -39,7 +39,7 @@ class MainWeatherResponse: Codable {
     
 }
 class WeatherResponse:Codable {
-    var id:String?
+    var id:Int?
     var main:String?
     var description:String?
     var icon:String
@@ -64,8 +64,8 @@ class LocationWeatherDetailsInteractor: LocationWeatherDetailInputInteractorProt
     var presenter: LocationWeatherDetailPresenterProtocol?
     func fetchWeatherDetails(locationItem: LocationItem) {
     
-        if let location = locationItem.location {
-            let getURLString = NetworkConstant.baseURL+NetworkConstant.latitude+"\(location.coordinate.latitude)&"+NetworkConstant.longitiude+"\(location.coordinate.longitude)"+NetworkConstant.appid
+        if let locationName = locationItem.name {
+            let getURLString = NetworkConstant.baseURL+NetworkConstant.query+locationName+"&"+NetworkConstant.appid
                 networkSession = NetworkSession(completionBlock: {(data) in
                     self.parseWeatherDetails(data: data, location: locationItem)
                    
@@ -85,7 +85,7 @@ class LocationWeatherDetailsInteractor: LocationWeatherDetailInputInteractorProt
              self.didFetchWeatherFor(location: location)
         }
         catch{
-            
+            print(error)
         }
     }
     

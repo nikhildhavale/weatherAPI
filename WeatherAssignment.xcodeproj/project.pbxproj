@@ -31,6 +31,7 @@
 		F1A2614C23DEA890006F397F /* LocationWeatherDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A2614B23DEA890006F397F /* LocationWeatherDetailsPresenter.swift */; };
 		F1A2615123DEB05D006F397F /* LocationWeatherDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A2615023DEB05D006F397F /* LocationWeatherDetailsInteractor.swift */; };
 		F1A2615423DEC5D6006F397F /* NetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A2615323DEC5D6006F397F /* NetworkSession.swift */; };
+		F1A2615723DEDAC5006F397F /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A2615623DEDAC5006F397F /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		F1A2614B23DEA890006F397F /* LocationWeatherDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWeatherDetailsPresenter.swift; sourceTree = "<group>"; };
 		F1A2615023DEB05D006F397F /* LocationWeatherDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWeatherDetailsInteractor.swift; sourceTree = "<group>"; };
 		F1A2615323DEC5D6006F397F /* NetworkSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSession.swift; sourceTree = "<group>"; };
+		F1A2615623DEDAC5006F397F /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 				AE615F6623DD870F004E8D0A /* AppDelegate.swift */,
 				AE615F6823DD870F004E8D0A /* SceneDelegate.swift */,
 				AEDC0F3D23DDCA3A000C8D39 /* Constant.swift */,
+				F1A2615623DEDAC5006F397F /* Extension.swift */,
 				F1A2615523DEC5E2006F397F /* Network */,
 				AEDC0F4223DDDFD5000C8D39 /* Location */,
 				AEFD1E9A23DE8AA100638F0D /* LocationWeather */,
@@ -441,6 +444,7 @@
 				F1A2614923DEA6AF006F397F /* LocationWeatherDetailWireFrame.swift in Sources */,
 				AEFD1E9923DE80F900638F0D /* LocationListInteractor.swift in Sources */,
 				AEDC0F3C23DDC988000C8D39 /* LocationCollectionViewController.swift in Sources */,
+				F1A2615723DEDAC5006F397F /* Extension.swift in Sources */,
 				AEDC0F4823DDE335000C8D39 /* Entity.swift in Sources */,
 				AE615F6923DD870F004E8D0A /* SceneDelegate.swift in Sources */,
 				AEDC0F4C23DDE475000C8D39 /* LocationListProtocol.swift in Sources */,

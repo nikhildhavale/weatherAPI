@@ -19,7 +19,7 @@ protocol LocationListPresenterProtocol: class {
     //View -> Presenter
     var interactor: LocationListInputInteractorProtocol? {get set}
     var view: LocationListViewProtocol? {get set}
-    var wireframe: LocationListInputInteractorProtocol? {get set}
+    var wireframe: LocationListWireFrameProtocol? {get set}
 
     func viewDidLoad()
     func showWeatherSelection(with location: LocationItem, from view: UIViewController)
@@ -28,7 +28,7 @@ protocol LocationListPresenterProtocol: class {
 protocol LocationListInputInteractorProtocol: class {
     var presenter: LocationListOutputInteractorProtocol? {get set}
     //Presenter -> Interactor
-    func getWeatherList()
+    func getLocationList()
 }
 
 protocol LocationListOutputInteractorProtocol: class {
@@ -38,6 +38,6 @@ protocol LocationListOutputInteractorProtocol: class {
 
 protocol LocationListWireFrameProtocol: class {
     //Presenter -> Wireframe
-    func pushToWeatherDetail(withlocation: LocationItem,from view: UIViewController)
-    static func createWeatherListModule(WeatherListRef: LocationContainerListViewController)
+    func pushToWeatherDetail(with location: LocationItem,from view: UIViewController)
+    static func createLocationListModule(locationListRef: LocationContainerListViewController)
 }

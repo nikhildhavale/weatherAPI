@@ -9,12 +9,13 @@
 import UIKit
 
 class LocationCollectionViewController: UICollectionViewController {
-
+    var presenter:LocationListPresenterProtocol?
+    var locationList = [LocationItem]()
     override func viewDidLoad() {
         super.viewDidLoad()
 
        
-        self.collectionView!.register(UINib(nibName: "LocationViewCellCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: WeatherUIConstant.cellIdentifier)
+        self.collectionView!.register(UINib(nibName: WeatherUIConstant.LocationViewCellCollectionViewCell, bundle: nil), forCellWithReuseIdentifier: WeatherUIConstant.cellIdentifier)
     }
 
     /*

@@ -22,6 +22,8 @@
 		AEDC0F4423DDDFE9000C8D39 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDC0F4323DDDFE9000C8D39 /* LocationManager.swift */; };
 		AEDC0F4823DDE335000C8D39 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDC0F4723DDE335000C8D39 /* Entity.swift */; };
 		AEDC0F4C23DDE475000C8D39 /* LocationListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDC0F4B23DDE475000C8D39 /* LocationListProtocol.swift */; };
+		AEDC0F4E23DDE6AD000C8D39 /* LocationListWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDC0F4D23DDE6AD000C8D39 /* LocationListWireFrame.swift */; };
+		AEDC0F5023DDE952000C8D39 /* LocationListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDC0F4F23DDE952000C8D39 /* LocationListPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		AEDC0F4323DDDFE9000C8D39 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		AEDC0F4723DDE335000C8D39 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		AEDC0F4B23DDE475000C8D39 /* LocationListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListProtocol.swift; sourceTree = "<group>"; };
+		AEDC0F4D23DDE6AD000C8D39 /* LocationListWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListWireFrame.swift; sourceTree = "<group>"; };
+		AEDC0F4F23DDE952000C8D39 /* LocationListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +175,7 @@
 		AEDC0F4123DDDFB8000C8D39 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				AEDC0F4F23DDE952000C8D39 /* LocationListPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -209,6 +214,7 @@
 		AEDC0F4A23DDE3C4000C8D39 /* WireFrame */ = {
 			isa = PBXGroup;
 			children = (
+				AEDC0F4D23DDE6AD000C8D39 /* LocationListWireFrame.swift */,
 			);
 			path = WireFrame;
 			sourceTree = "<group>";
@@ -346,9 +352,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE615F6B23DD870F004E8D0A /* LocationContainerListViewController.swift in Sources */,
+				AEDC0F4E23DDE6AD000C8D39 /* LocationListWireFrame.swift in Sources */,
 				AE615F6723DD870F004E8D0A /* AppDelegate.swift in Sources */,
 				AEDC0F3923DDC7C1000C8D39 /* LocationViewCellCollectionViewCell.swift in Sources */,
 				AEDC0F4423DDDFE9000C8D39 /* LocationManager.swift in Sources */,
+				AEDC0F5023DDE952000C8D39 /* LocationListPresenter.swift in Sources */,
 				AEDC0F3C23DDC988000C8D39 /* LocationCollectionViewController.swift in Sources */,
 				AEDC0F4823DDE335000C8D39 /* Entity.swift in Sources */,
 				AE615F6923DD870F004E8D0A /* SceneDelegate.swift in Sources */,

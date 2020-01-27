@@ -32,6 +32,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="GYW-z7-1FB"/>
+                    <connections>
+                        <segue destination="u58-dL-F1Y" kind="show" identifier="weatherDetailsSegue" id="Zxj-Oz-bKc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -61,6 +64,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d9t-mH-ViD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1958" y="93"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mMm-im-uL7">
+            <objects>
+                <viewController id="u58-dL-F1Y" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BdQ-EJ-g6w">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="NCj-iV-QB7"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kdr-qw-epW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hqo-Qf-1X0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1206" y="860"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9E8-ZT-6g8">

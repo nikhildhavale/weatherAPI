@@ -12,15 +12,21 @@ protocol LocationWeatherDetailPresenterProtocol: class {
     
  //   var wireframe:LocationWeatherDetailWireFrameProtocol
     var view: LocationWeatherDetailViewProtocol? {get set}
-    
-    //View -> Presenter
+    var interactor: LocationWeatherDetailInputInteractorProtocol? {get set}
     func viewDidLoad()
     
+}
+protocol LocationWeatherDetailInputInteractorProtocol: class {
+    var presenter: LocationWeatherDetailPresenterProtocol? {get set}
+   
+}
+protocol LocationWeatherDetailOutputInteractorProtocol:class {
+    func didFetchWeatherFor(location:LocationItem)
 }
 
 protocol LocationWeatherDetailViewProtocol: class {
     //Presenter -> View
-    func showFruitDetail(with locationItem: LocationItem)
+    func showLocationWeatherDetail(with locationItem: LocationItem)
 }
 
 protocol LocationWeatherDetailWireFrameProtocol: class {

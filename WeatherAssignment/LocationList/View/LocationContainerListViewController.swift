@@ -17,7 +17,7 @@ class LocationContainerListViewController: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? LocationWeatherDetailsViewController , let locationItem = sender as? LocationItem {
-            destination.locationItem = locationItem
+            LocationWeatherDetailWireFrame.createLocationWeatherDetailsModule(locationDetailsRef: destination, with: locationItem)
         }
     }
 }

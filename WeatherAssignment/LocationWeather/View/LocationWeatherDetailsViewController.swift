@@ -14,7 +14,7 @@ class LocationWeatherDetailsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        presenter?.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     
@@ -31,7 +31,7 @@ class LocationWeatherDetailsViewController: UIViewController {
 
 }
 extension LocationWeatherDetailsViewController:LocationWeatherDetailViewProtocol {
-    func showFruitDetail(with locationItem: LocationItem) {
+    func showLocationWeatherDetail(with locationItem: LocationItem) {
         
     }
     

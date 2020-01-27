@@ -12,7 +12,7 @@ class LocationManager:NSObject,CLLocationManagerDelegate {
     static let shared = LocationManager()
     let manager = CLLocationManager()
     var currentLocation = WeatherUIConstant.defaultWeathLocation
-    var currentLocationItem = LocationItem(location: WeatherUIConstant.defaultWeathLocation, name: WeatherUIConstant.defaultLocationString)
+    var currentLocationItem = LocationItem(location: WeatherUIConstant.defaultWeathLocation, name: WeatherUIConstant.defaultLocationString) 
     override init() {
         manager.requestWhenInUseAuthorization()
     }

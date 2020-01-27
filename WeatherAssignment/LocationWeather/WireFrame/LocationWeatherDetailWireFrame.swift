@@ -8,13 +8,13 @@
 
 import Foundation
 class LocationWeatherDetailWireFrame: LocationWeatherDetailWireFrameProtocol {
-    static func createLocationWeatherDetailsModule(locationListRef: LocationWeatherDetailsViewController, with locationItem:LocationItem) {
+    static func createLocationWeatherDetailsModule(locationDetailsRef: LocationWeatherDetailsViewController, with locationItem:LocationItem) {
         let presenter:LocationWeatherDetailPresenterProtocol  = LocationWeatherDetailsPresenter()
-        locationListRef.presenter = presenter
-        locationListRef.presenter?.view = locationListRef
-//        locationListRef.presenter?.interactor = LocationListInteractor()
-//        locationListRef.presenter?.interactor?.presenter = presenter
-    
+        locationDetailsRef.presenter = presenter
+        locationDetailsRef.presenter?.view = locationDetailsRef
+        locationDetailsRef.locationItem = locationItem
+        locationDetailsRef.presenter?.interactor = LocationWeatherDetailsInteractor()
+        locationDetailsRef.presenter?.interactor?.presenter = presenter
     }
     
     

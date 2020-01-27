@@ -29,6 +29,7 @@
 		AEFD1EA123DE8B4D00638F0D /* LocationWeatherDetailsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFD1EA023DE8B4D00638F0D /* LocationWeatherDetailsProtocol.swift */; };
 		F1A2614923DEA6AF006F397F /* LocationWeatherDetailWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A2614823DEA6AF006F397F /* LocationWeatherDetailWireFrame.swift */; };
 		F1A2614C23DEA890006F397F /* LocationWeatherDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A2614B23DEA890006F397F /* LocationWeatherDetailsPresenter.swift */; };
+		F1A2615123DEB05D006F397F /* LocationWeatherDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A2615023DEB05D006F397F /* LocationWeatherDetailsInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		AEFD1EA023DE8B4D00638F0D /* LocationWeatherDetailsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWeatherDetailsProtocol.swift; sourceTree = "<group>"; };
 		F1A2614823DEA6AF006F397F /* LocationWeatherDetailWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationWeatherDetailWireFrame.swift; sourceTree = "<group>"; };
 		F1A2614B23DEA890006F397F /* LocationWeatherDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWeatherDetailsPresenter.swift; sourceTree = "<group>"; };
+		F1A2615023DEB05D006F397F /* LocationWeatherDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWeatherDetailsInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +240,7 @@
 				F1A2614723DEA696006F397F /* WireFrame */,
 				AEFD1E9D23DE8AEC00638F0D /* View */,
 				AEFD1E9B23DE8ABF00638F0D /* Protocol */,
+				F1A2615223DEB066006F397F /* Interactor */,
 			);
 			path = LocationWeather;
 			sourceTree = "<group>";
@@ -272,6 +275,14 @@
 				F1A2614B23DEA890006F397F /* LocationWeatherDetailsPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F1A2615223DEB066006F397F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F1A2615023DEB05D006F397F /* LocationWeatherDetailsInteractor.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,6 +418,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE615F6B23DD870F004E8D0A /* LocationContainerListViewController.swift in Sources */,
+				F1A2615123DEB05D006F397F /* LocationWeatherDetailsInteractor.swift in Sources */,
 				AEDC0F4E23DDE6AD000C8D39 /* LocationListWireFrame.swift in Sources */,
 				AEFD1EA123DE8B4D00638F0D /* LocationWeatherDetailsProtocol.swift in Sources */,
 				AE615F6723DD870F004E8D0A /* AppDelegate.swift in Sources */,

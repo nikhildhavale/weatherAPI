@@ -27,6 +27,8 @@
 		AEFD1E9923DE80F900638F0D /* LocationListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFD1E9823DE80F900638F0D /* LocationListInteractor.swift */; };
 		AEFD1E9F23DE8B0E00638F0D /* LocationWeatherDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFD1E9E23DE8B0E00638F0D /* LocationWeatherDetailsViewController.swift */; };
 		AEFD1EA123DE8B4D00638F0D /* LocationWeatherDetailsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFD1EA023DE8B4D00638F0D /* LocationWeatherDetailsProtocol.swift */; };
+		F1A2614923DEA6AF006F397F /* LocationWeatherDetailWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A2614823DEA6AF006F397F /* LocationWeatherDetailWireFrame.swift */; };
+		F1A2614C23DEA890006F397F /* LocationWeatherDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A2614B23DEA890006F397F /* LocationWeatherDetailsPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		AEFD1E9823DE80F900638F0D /* LocationListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListInteractor.swift; sourceTree = "<group>"; };
 		AEFD1E9E23DE8B0E00638F0D /* LocationWeatherDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWeatherDetailsViewController.swift; sourceTree = "<group>"; };
 		AEFD1EA023DE8B4D00638F0D /* LocationWeatherDetailsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWeatherDetailsProtocol.swift; sourceTree = "<group>"; };
+		F1A2614823DEA6AF006F397F /* LocationWeatherDetailWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationWeatherDetailWireFrame.swift; sourceTree = "<group>"; };
+		F1A2614B23DEA890006F397F /* LocationWeatherDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWeatherDetailsPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,8 +234,9 @@
 		AEFD1E9A23DE8AA100638F0D /* LocationWeather */ = {
 			isa = PBXGroup;
 			children = (
+				F1A2614A23DEA870006F397F /* Presenter */,
+				F1A2614723DEA696006F397F /* WireFrame */,
 				AEFD1E9D23DE8AEC00638F0D /* View */,
-				AEFD1E9C23DE8AC800638F0D /* WireFrame */,
 				AEFD1E9B23DE8ABF00638F0D /* Protocol */,
 			);
 			path = LocationWeather;
@@ -245,19 +250,28 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
-		AEFD1E9C23DE8AC800638F0D /* WireFrame */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = WireFrame;
-			sourceTree = "<group>";
-		};
 		AEFD1E9D23DE8AEC00638F0D /* View */ = {
 			isa = PBXGroup;
 			children = (
 				AEFD1E9E23DE8B0E00638F0D /* LocationWeatherDetailsViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F1A2614723DEA696006F397F /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				F1A2614823DEA6AF006F397F /* LocationWeatherDetailWireFrame.swift */,
+			);
+			path = WireFrame;
+			sourceTree = "<group>";
+		};
+		F1A2614A23DEA870006F397F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F1A2614B23DEA890006F397F /* LocationWeatherDetailsPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -400,11 +414,13 @@
 				AEDC0F3923DDC7C1000C8D39 /* LocationViewCellCollectionViewCell.swift in Sources */,
 				AEDC0F4423DDDFE9000C8D39 /* LocationManager.swift in Sources */,
 				AEDC0F5023DDE952000C8D39 /* LocationListPresenter.swift in Sources */,
+				F1A2614923DEA6AF006F397F /* LocationWeatherDetailWireFrame.swift in Sources */,
 				AEFD1E9923DE80F900638F0D /* LocationListInteractor.swift in Sources */,
 				AEDC0F3C23DDC988000C8D39 /* LocationCollectionViewController.swift in Sources */,
 				AEDC0F4823DDE335000C8D39 /* Entity.swift in Sources */,
 				AE615F6923DD870F004E8D0A /* SceneDelegate.swift in Sources */,
 				AEDC0F4C23DDE475000C8D39 /* LocationListProtocol.swift in Sources */,
+				F1A2614C23DEA890006F397F /* LocationWeatherDetailsPresenter.swift in Sources */,
 				AEDC0F3E23DDCA3A000C8D39 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

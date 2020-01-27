@@ -10,6 +10,8 @@ import UIKit
 
 class LocationWeatherDetailsViewController: UIViewController {
     var locationItem:LocationItem?
+    var presenter:LocationWeatherDetailPresenterProtocol?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,4 +29,11 @@ class LocationWeatherDetailsViewController: UIViewController {
     }
     */
 
+}
+extension LocationWeatherDetailsViewController:LocationWeatherDetailViewProtocol {
+    func showFruitDetail(with locationItem: LocationItem) {
+        
+    }
+    
+    
 }

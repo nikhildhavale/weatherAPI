@@ -12,9 +12,13 @@ class LocationManager:NSObject,CLLocationManagerDelegate {
     static let shared = LocationManager()
     let manager = CLLocationManager()
     var currentLocation = WeatherUIConstant.defaultWeathLocation
-    var currentLocationItem = LocationItem(location: WeatherUIConstant.defaultWeathLocation, name: WeatherUIConstant.defaultLocationString) 
+    var currentLocationItem = LocationItem(location: WeatherUIConstant.defaultWeathLocation, name: WeatherUIConstant.defaultLocationString)
+    var presenter:LocationListPresenterProtocol?
     override init() {
+        super.init()
+        manager.delegate = self
         manager.requestWhenInUseAuthorization()
+        manager.requestLocation()
     }
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         currentLocation = locations.first ?? WeatherUIConstant.defaultWeathLocation
@@ -23,6 +27,7 @@ class LocationManager:NSObject,CLLocationManagerDelegate {
             in
             if let placemark = placemarks?.first , let locality = placemark.locality{
                 self.currentLocationItem = LocationItem(location: self.currentLocation, name: locality )
+                self.presenter?.viewDidLoad()
             }
         } )
     }

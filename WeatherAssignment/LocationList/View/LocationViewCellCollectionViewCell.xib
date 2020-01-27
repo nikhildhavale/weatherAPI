@@ -16,8 +16,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="232" height="225"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jyo-yu-qE6">
-                        <rect key="frame" x="95" y="102" width="42" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jyo-yu-qE6">
+                        <rect key="frame" x="10" y="102" width="212" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -26,7 +26,9 @@
             </view>
             <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="Jyo-yu-qE6" secondAttribute="trailing" constant="10" id="EXq-Lg-hDM"/>
                 <constraint firstItem="Jyo-yu-qE6" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="L63-tz-PcU"/>
+                <constraint firstItem="Jyo-yu-qE6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="Vz8-r4-eXZ"/>
                 <constraint firstItem="Jyo-yu-qE6" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="b5Z-Dd-iZ2"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>

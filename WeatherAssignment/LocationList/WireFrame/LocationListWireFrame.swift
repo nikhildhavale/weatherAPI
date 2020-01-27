@@ -19,6 +19,7 @@ class LocationListWireFrame: LocationListWireFrameProtocol {
         locationListRef.presenter?.view = locationListRef
         locationListRef.presenter?.interactor = LocationListInteractor()
         locationListRef.presenter?.interactor?.presenter = presenter
+        LocationManager.shared.presenter = presenter
         
     }
     

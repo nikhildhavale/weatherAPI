@@ -11,6 +11,7 @@ import CoreLocation
 class LocationItem {
     var location:CLLocation?
     var name:String?
+    var weatherInfo:WeatherDetailsResponse?
     init(location:CLLocation,name:String) {
         self.location = location
         self.name = name

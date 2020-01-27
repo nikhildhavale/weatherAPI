@@ -14,6 +14,9 @@ class LocationWeatherDetailsViewController: UIViewController {
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var customImage: CustomImageView!
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var pressure:UILabel!
+    @IBOutlet weak var Humidity:UILabel!
+    @IBOutlet weak var wind:UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.viewDidLoad()
@@ -42,6 +45,9 @@ extension LocationWeatherDetailsViewController:LocationWeatherDetailViewProtocol
         loadingIndicator.stopAnimating()
         customImage.id =  locationItem.getTodayImageId()
         temperatureLabel.text = locationItem.getCurrentTemperature()
+        pressure.attributedText = locationItem.getPressure()
+        Humidity.attributedText = locationItem.getHumidity()
+        wind.attributedText = locationItem.getWind()
     }
     
     

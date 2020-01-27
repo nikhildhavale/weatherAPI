@@ -48,14 +48,14 @@ class WeatherResponse:Codable {
      var minTemp:Float?
      var maxTemp:Float?
      var pressure:Int?
-     var humidty:Int?
+     var humidity:Int?
      private enum CodingKeys :String, CodingKey {
          case temp
          case feelsLike = "feels_like"
          case minTemp = "temp_min"
          case maxTemp = "temp_max"
          case pressure = "pressure"
-         case humidty
+         case humidity
      }
      
  }

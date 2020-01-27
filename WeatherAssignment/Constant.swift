@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreLocation
+import UIKit
 struct WeatherUIConstant {
     static let cellIdentifier = "weatherCell"
     static let defaultWeathLocation = CLLocation(latitude: 18.516, longitude: 73.856)
@@ -25,4 +26,8 @@ struct NetworkConstant{
     static let query = "q="
     static let iconString = "https://openweathermap.org/img/w/idName.png"
     static let imageIdKey = "idName"
+}
+struct FontConstant {
+    static let valueFont = [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 22),NSAttributedString.Key.foregroundColor : UIColor.white]
+    static let titleFont = [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 17),NSAttributedString.Key.foregroundColor : UIColor.white]
 }

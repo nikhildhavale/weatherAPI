@@ -40,4 +40,28 @@ class LocationItem {
         }
         return nil
     }
+    func getPressure() -> NSMutableAttributedString {
+        let attributedString = NSMutableAttributedString()
+        if let pressure = getTodayForecast()?.main?.pressure{
+            attributedString.append(NSAttributedString(string: "\(pressure) hPa", attributes: FontConstant.valueFont))
+            attributedString.append(NSAttributedString(string: "\nPressure", attributes: FontConstant.titleFont))
+        }
+        return attributedString
+    }
+    func getHumidity() -> NSMutableAttributedString {
+        let attributedString = NSMutableAttributedString()
+        if let humidity = getTodayForecast()?.main?.humidity{
+            attributedString.append(NSAttributedString(string: "\(humidity) %", attributes: FontConstant.valueFont))
+            attributedString.append(NSAttributedString(string: "\nHumidity", attributes: FontConstant.titleFont))
+        }
+        return attributedString
+    }
+    func getWind() -> NSMutableAttributedString {
+        let attributedString = NSMutableAttributedString()
+        if let wind = getTodayForecast()?.wind?.speed{
+            attributedString.append(NSAttributedString(string: "\(wind) m/s", attributes: FontConstant.valueFont))
+            attributedString.append(NSAttributedString(string: "\nWind", attributes: FontConstant.titleFont))
+        }
+        return attributedString
+    }
 }

@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class NetwokSession {
+class NetworkSession {
     var completionBlock:((Data) -> ())?
     var errorBlock:((Error)->())?
     var cancelBlock:(()->())?

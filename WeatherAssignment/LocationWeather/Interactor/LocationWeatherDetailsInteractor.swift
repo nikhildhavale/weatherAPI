@@ -11,7 +11,16 @@ class LocationWeatherDetailsInteractor: LocationWeatherDetailInputInteractorProt
 
     var presenter: LocationWeatherDetailPresenterProtocol?
     func fetchWeatherDetails(locationItem: LocationItem) {
-        
+        let networkSession = NetworkSession(completionBlock: {(data) in
+            
+        }, errorBlock: {(error )
+            in
+            
+        }, cancelBlock: nil)
+        if let location = locationItem.location {
+            let getURLString = NetworkConstant.baseURL+NetworkConstant.latitude+"\(location.coordinate.latitude)&"
+
+        }
     }
     
     

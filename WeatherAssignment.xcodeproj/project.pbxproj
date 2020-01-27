@@ -123,7 +123,7 @@
 				AE615F6823DD870F004E8D0A /* SceneDelegate.swift */,
 				AEDC0F3D23DDCA3A000C8D39 /* Constant.swift */,
 				AEDC0F4223DDDFD5000C8D39 /* Location */,
-				AEDC0F3F23DDDF75000C8D39 /* WeatherList */,
+				AEDC0F3F23DDDF75000C8D39 /* LocationList */,
 				AE615F6C23DD870F004E8D0A /* Main.storyboard */,
 				AE615F6F23DD8711004E8D0A /* Assets.xcassets */,
 				AE615F7123DD8711004E8D0A /* LaunchScreen.storyboard */,
@@ -150,7 +150,7 @@
 			path = WeatherAssignmentUITests;
 			sourceTree = "<group>";
 		};
-		AEDC0F3F23DDDF75000C8D39 /* WeatherList */ = {
+		AEDC0F3F23DDDF75000C8D39 /* LocationList */ = {
 			isa = PBXGroup;
 			children = (
 				AEDC0F4923DDE3A7000C8D39 /* Protocol */,
@@ -160,7 +160,7 @@
 				AEDC0F4123DDDFB8000C8D39 /* Presenter */,
 				AEDC0F4023DDDFA3000C8D39 /* View */,
 			);
-			path = WeatherList;
+			path = LocationList;
 			sourceTree = "<group>";
 		};
 		AEDC0F4023DDDFA3000C8D39 /* View */ = {

@@ -20,6 +20,10 @@ class LocationCollectionViewController: UICollectionViewController,LocationListV
     override func viewDidLoad() {
         super.viewDidLoad()
         LocationListWireFrame.createLocationListModule(locationListRef: self)
+        presenter?.viewDidLoad()
+        self.registerCell()
+    }
+    func registerCell(){
         self.collectionView!.register(UINib(nibName: WeatherUIConstant.LocationViewCellCollectionViewCell, bundle: nil), forCellWithReuseIdentifier: WeatherUIConstant.cellIdentifier)
     }
     func showLocationList(with locationItem: [LocationItem]) {
@@ -52,11 +56,16 @@ class LocationCollectionViewController: UICollectionViewController,LocationListV
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: WeatherUIConstant.cellIdentifier, for: indexPath) as! LocationViewCellCollectionViewCell
         
-        
+        cell.labelTitle.text = locationList[indexPath.row].name
     
         return cell
     }
-
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let parent = self.parent {
+             presenter?.showWeatherSelection(with: locationList[indexPath.row], from: parent)
+        }
+       
+    }
     // MARK: UICollectionViewDelegate
 
     /*

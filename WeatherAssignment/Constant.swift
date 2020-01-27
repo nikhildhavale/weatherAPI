@@ -13,6 +13,7 @@ struct WeatherUIConstant {
     static let defaultWeathLocation = CLLocation(latitude: 18.516, longitude: 73.856)
     static let weatherDetailsSegue = "weatherDetailsSegue"
     static let LocationViewCellCollectionViewCell = "LocationViewCellCollectionViewCell"
+    static let defaultLocationString = "Pune"
 }
 struct NetworkConstant{
     static let baseURL = "http://api.openweathermap.org/data/2.5/weather?"

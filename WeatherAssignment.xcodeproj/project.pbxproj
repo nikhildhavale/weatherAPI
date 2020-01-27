@@ -24,6 +24,7 @@
 		AEDC0F4C23DDE475000C8D39 /* LocationListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDC0F4B23DDE475000C8D39 /* LocationListProtocol.swift */; };
 		AEDC0F4E23DDE6AD000C8D39 /* LocationListWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDC0F4D23DDE6AD000C8D39 /* LocationListWireFrame.swift */; };
 		AEDC0F5023DDE952000C8D39 /* LocationListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDC0F4F23DDE952000C8D39 /* LocationListPresenter.swift */; };
+		AEFD1E9923DE80F900638F0D /* LocationListIneractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFD1E9823DE80F900638F0D /* LocationListIneractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		AEDC0F4B23DDE475000C8D39 /* LocationListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListProtocol.swift; sourceTree = "<group>"; };
 		AEDC0F4D23DDE6AD000C8D39 /* LocationListWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListWireFrame.swift; sourceTree = "<group>"; };
 		AEDC0F4F23DDE952000C8D39 /* LocationListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListPresenter.swift; sourceTree = "<group>"; };
+		AEFD1E9823DE80F900638F0D /* LocationListIneractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListIneractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 		AEDC0F4523DDE2F6000C8D39 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				AEFD1E9823DE80F900638F0D /* LocationListIneractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				AEDC0F3923DDC7C1000C8D39 /* LocationViewCellCollectionViewCell.swift in Sources */,
 				AEDC0F4423DDDFE9000C8D39 /* LocationManager.swift in Sources */,
 				AEDC0F5023DDE952000C8D39 /* LocationListPresenter.swift in Sources */,
+				AEFD1E9923DE80F900638F0D /* LocationListIneractor.swift in Sources */,
 				AEDC0F3C23DDC988000C8D39 /* LocationCollectionViewController.swift in Sources */,
 				AEDC0F4823DDE335000C8D39 /* Entity.swift in Sources */,
 				AE615F6923DD870F004E8D0A /* SceneDelegate.swift in Sources */,

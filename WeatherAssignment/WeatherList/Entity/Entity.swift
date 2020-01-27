@@ -11,4 +11,8 @@ import CoreLocation
 class LocationItem {
     var location:CLLocation?
     var name:String?
+    init(location:CLLocation,name:String) {
+        self.location = location
+        self.name = name
+    }
 }

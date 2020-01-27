@@ -8,16 +8,24 @@
 
 import UIKit
 
-class LocationCollectionViewController: UICollectionViewController {
+class LocationCollectionViewController: UICollectionViewController,LocationListViewProtocol {
+  
+    
     var presenter:LocationListPresenterProtocol?
-    var locationList = [LocationItem]()
+    var locationList = [LocationItem]() {
+        didSet {
+            collectionView?.reloadData()
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       
+        LocationListWireFrame.createLocationListModule(locationListRef: self)
         self.collectionView!.register(UINib(nibName: WeatherUIConstant.LocationViewCellCollectionViewCell, bundle: nil), forCellWithReuseIdentifier: WeatherUIConstant.cellIdentifier)
     }
+    func showLocationList(with locationItem: [LocationItem]) {
+        locationList = locationItem
 
+    }
     /*
     // MARK: - Navigation
 
@@ -32,18 +40,18 @@ class LocationCollectionViewController: UICollectionViewController {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return locationList.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: WeatherUIConstant.cellIdentifier, for: indexPath) as! LocationViewCellCollectionViewCell
-    
+        
         
     
         return cell

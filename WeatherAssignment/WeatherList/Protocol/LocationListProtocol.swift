@@ -12,7 +12,7 @@ import UIKit
 
 protocol LocationListViewProtocol: class {
     // PRESENTER -> VIEW
-    func showWeathers(with locationItem: [LocationItem])
+    func showLocationList(with locationItem: [LocationItem])
 }
 
 protocol LocationListPresenterProtocol: class {
@@ -33,11 +33,11 @@ protocol LocationListInputInteractorProtocol: class {
 
 protocol LocationListOutputInteractorProtocol: class {
     //Interactor -> Presenter
-    func WeatherListDidFetch(locationList: [LocationItem])
+    func locationListDidFetch(locationList: [LocationItem])
 }
 
 protocol LocationListWireFrameProtocol: class {
     //Presenter -> Wireframe
     func pushToWeatherDetail(with location: LocationItem,from view: UIViewController)
-    static func createLocationListModule(locationListRef: LocationContainerListViewController)
+    static func createLocationListModule(locationListRef: LocationCollectionViewController)
 }

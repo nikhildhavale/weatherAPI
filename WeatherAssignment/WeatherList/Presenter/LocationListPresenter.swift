@@ -24,3 +24,10 @@ class LocationListPresenter:LocationListPresenterProtocol{
     }
    
 }
+extension LocationListPresenter:LocationListOutputInteractorProtocol{
+    func locationListDidFetch(locationList: [LocationItem]) {
+        view?.showLocationList(with: locationList)
+    }
+    
+    
+}

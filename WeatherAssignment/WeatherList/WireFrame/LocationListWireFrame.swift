@@ -12,8 +12,13 @@ class LocationListWireFrame: LocationListWireFrameProtocol {
     func pushToWeatherDetail(with location: LocationItem, from view: UIViewController) {
         view.performSegue(withIdentifier: WeatherUIConstant.weatherDetailsSegue, sender: location)
     }
-    static func createLocationListModule(locationListRef: LocationContainerListViewController) {
-        let presenter: LocationListPresenterProtocol & LocationListOutputInteractorProtocol = LocationListPresenter()
+    static func createLocationListModule(locationListRef: LocationCollectionViewController) {
+        let presenter:LocationListPresenterProtocol & LocationListOutputInteractorProtocol  = LocationListPresenter()
+        locationListRef.presenter = presenter
+        locationListRef.presenter?.wireframe = LocationListWireFrame()
+        locationListRef.presenter?.view = locationListRef
+        locationListRef.presenter?.interactor = LocationListIneractor()
+        locationListRef.presenter?.interactor?.presenter = presenter
         
     }
     

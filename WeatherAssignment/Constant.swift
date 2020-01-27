@@ -16,9 +16,12 @@ struct WeatherUIConstant {
     static let defaultLocationString = "Pune"
 }
 struct NetworkConstant{
-    static let baseURL = "https://api.openweathermap.org/data/2.5/weather?"
+    static let baseURL = "https://api.openweathermap.org/data/2.5"
+    static let weather = "/weather?"
+    static let forecast = "/forecast?"
     static let appid =  "appid=de37bb6f21b34a04b8bd1dbca6fa8ee0"
     static let latitude = "lat="
     static let longitiude = "long="
     static let query = "q="
+    static let iconString = "http://openweathermap.org/img/w/idName.png"
 }

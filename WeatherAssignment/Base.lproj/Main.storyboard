@@ -65,10 +65,10 @@
             </objects>
             <point key="canvasLocation" x="1958" y="93"/>
         </scene>
-        <!--View Controller-->
+        <!--Location Weather Details View Controller-->
         <scene sceneID="mMm-im-uL7">
             <objects>
-                <viewController id="u58-dL-F1Y" sceneMemberID="viewController">
+                <viewController id="u58-dL-F1Y" customClass="LocationWeatherDetailsViewController" customModule="WeatherAssignment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BdQ-EJ-g6w">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

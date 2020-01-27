@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LocationListIneractor: LocationListInputInteractorProtocol {
+class LocationListInteractor: LocationListInputInteractorProtocol {
     var presenter: LocationListOutputInteractorProtocol?
     
     func getLocationList() {

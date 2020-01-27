@@ -12,6 +12,7 @@ class LocationItem {
     var location:CLLocation?
     var name:String?
     var weatherInfo:WeatherDetailsResponse?
+    
     init(location:CLLocation,name:String) {
         self.location = location
         self.name = name
@@ -32,5 +33,11 @@ class LocationItem {
             
         }.first
         
+    }
+    func getCurrentTemperature() -> String?{
+        if let temp = getTodayForecast()?.main?.temp{
+            return "\(temp) \u{00B0}C"
+        }
+        return nil
     }
 }

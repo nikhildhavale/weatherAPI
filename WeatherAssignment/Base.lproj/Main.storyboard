@@ -78,7 +78,7 @@
                                 <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </activityIndicatorView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hUJ-ao-rag">
-                                <rect key="frame" x="143" y="384" width="128" height="128"/>
+                                <rect key="frame" x="143" y="359" width="128" height="178"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gug-dz-Mrp" customClass="CustomImageView" customModule="WeatherAssignment" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
@@ -87,6 +87,12 @@
                                             <constraint firstAttribute="width" secondItem="Gug-dz-Mrp" secondAttribute="height" multiplier="1:1" id="fDB-UH-9Ax"/>
                                         </constraints>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZmF-RG-W6A">
+                                        <rect key="frame" x="0.0" y="128" width="128" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -103,6 +109,7 @@
                     <connections>
                         <outlet property="customImage" destination="Gug-dz-Mrp" id="WET-G3-dMD"/>
                         <outlet property="loadingIndicator" destination="SDS-EC-1IF" id="NYR-MW-mfZ"/>
+                        <outlet property="temperatureLabel" destination="ZmF-RG-W6A" id="Gdw-al-Kdh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hqo-Qf-1X0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

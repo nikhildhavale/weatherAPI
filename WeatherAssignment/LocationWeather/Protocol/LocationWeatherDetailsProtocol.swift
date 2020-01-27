@@ -7,3 +7,21 @@
 //
 
 import Foundation
+import UIKit
+protocol LocationWeatherDetailPresenterProtocol: class {
+    
+ //   var wireframe:LocationWeatherDetailWireFrameProtocol
+    var view: LocationWeatherDetailViewProtocol? {get set}
+    
+    //View -> Presenter
+    func viewDidLoad()
+    
+}
+
+protocol LocationWeatherDetailViewProtocol: class {
+    //Presenter -> View
+    func showFruitDetail(with locationItem: LocationItem)
+}
+
+protocol LocationWeatherDetailWireFrameProtocol: class {
+}

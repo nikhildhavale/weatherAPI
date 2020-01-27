@@ -11,7 +11,7 @@ import UIKit
 class LocationWeatherDetailsViewController: UIViewController {
     var locationItem:LocationItem?
     var presenter:LocationWeatherDetailPresenterProtocol?
-
+    var forecast:ForecastResponse?
     @IBOutlet weak var customImage: CustomImageView!
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     override func viewDidLoad() {
@@ -40,7 +40,9 @@ class LocationWeatherDetailsViewController: UIViewController {
 extension LocationWeatherDetailsViewController:LocationWeatherDetailViewProtocol {
     func showLocationWeatherDetail(with locationItem: LocationItem) {
         loadingIndicator.stopAnimating()
-        customImage.id =  locationItem.getImageId()
+        customImage.id =  locationItem.getTodayImageId()
+        forecast = locationItem.getTodayForecast()
+        
     }
     
     

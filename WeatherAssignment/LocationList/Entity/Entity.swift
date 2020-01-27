@@ -16,10 +16,21 @@ class LocationItem {
         self.location = location
         self.name = name
     }
-    func getImageId() -> String?{
-        if let weather = weatherInfo?.list?.first?.weather?.first {
-           return weather.icon
+    func getTodayImageId() -> String?{
+        if let forecast = getTodayForecast() {
+            return forecast.weather?.first?.icon
         }
         return nil;
+    }
+    func getTodayForecast() -> ForecastResponse?{
+        return weatherInfo?.list?.filter{
+            if let dateInt = $0.dt{
+                let date = Date(timeIntervalSince1970: TimeInterval(dateInt))
+                return Calendar.current.isDateInToday(date)
+            }
+            return false
+            
+        }.first
+        
     }
 }

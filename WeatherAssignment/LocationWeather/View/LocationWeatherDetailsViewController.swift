@@ -15,6 +15,10 @@ class LocationWeatherDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.viewDidLoad()
+        if let locationItem = locationItem {
+            presenter?.fetchWeatherDetails(locationItem: locationItem)
+
+        }
         // Do any additional setup after loading the view.
     }
     

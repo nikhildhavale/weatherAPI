@@ -30,6 +30,7 @@
 		F1A2614923DEA6AF006F397F /* LocationWeatherDetailWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A2614823DEA6AF006F397F /* LocationWeatherDetailWireFrame.swift */; };
 		F1A2614C23DEA890006F397F /* LocationWeatherDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A2614B23DEA890006F397F /* LocationWeatherDetailsPresenter.swift */; };
 		F1A2615123DEB05D006F397F /* LocationWeatherDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A2615023DEB05D006F397F /* LocationWeatherDetailsInteractor.swift */; };
+		F1A2615423DEC5D6006F397F /* NetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A2615323DEC5D6006F397F /* NetworkSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		F1A2614823DEA6AF006F397F /* LocationWeatherDetailWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationWeatherDetailWireFrame.swift; sourceTree = "<group>"; };
 		F1A2614B23DEA890006F397F /* LocationWeatherDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWeatherDetailsPresenter.swift; sourceTree = "<group>"; };
 		F1A2615023DEB05D006F397F /* LocationWeatherDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWeatherDetailsInteractor.swift; sourceTree = "<group>"; };
+		F1A2615323DEC5D6006F397F /* NetworkSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 				AE615F6623DD870F004E8D0A /* AppDelegate.swift */,
 				AE615F6823DD870F004E8D0A /* SceneDelegate.swift */,
 				AEDC0F3D23DDCA3A000C8D39 /* Constant.swift */,
+				F1A2615523DEC5E2006F397F /* Network */,
 				AEDC0F4223DDDFD5000C8D39 /* Location */,
 				AEFD1E9A23DE8AA100638F0D /* LocationWeather */,
 				AEDC0F3F23DDDF75000C8D39 /* LocationList */,
@@ -285,6 +288,14 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		F1A2615523DEC5E2006F397F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F1A2615323DEC5D6006F397F /* NetworkSession.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -420,6 +431,7 @@
 				AE615F6B23DD870F004E8D0A /* LocationContainerListViewController.swift in Sources */,
 				F1A2615123DEB05D006F397F /* LocationWeatherDetailsInteractor.swift in Sources */,
 				AEDC0F4E23DDE6AD000C8D39 /* LocationListWireFrame.swift in Sources */,
+				F1A2615423DEC5D6006F397F /* NetworkSession.swift in Sources */,
 				AEFD1EA123DE8B4D00638F0D /* LocationWeatherDetailsProtocol.swift in Sources */,
 				AE615F6723DD870F004E8D0A /* AppDelegate.swift in Sources */,
 				AEFD1E9F23DE8B0E00638F0D /* LocationWeatherDetailsViewController.swift in Sources */,

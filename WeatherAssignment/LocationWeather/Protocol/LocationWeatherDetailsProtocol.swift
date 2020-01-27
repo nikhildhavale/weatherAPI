@@ -14,11 +14,12 @@ protocol LocationWeatherDetailPresenterProtocol: class {
     var view: LocationWeatherDetailViewProtocol? {get set}
     var interactor: LocationWeatherDetailInputInteractorProtocol? {get set}
     func viewDidLoad()
+    func fetchWeatherDetails(locationItem:LocationItem)
     
 }
 protocol LocationWeatherDetailInputInteractorProtocol: class {
     var presenter: LocationWeatherDetailPresenterProtocol? {get set}
-   
+    func fetchWeatherDetails(locationItem:LocationItem)
 }
 protocol LocationWeatherDetailOutputInteractorProtocol:class {
     func didFetchWeatherFor(location:LocationItem)

@@ -10,13 +10,13 @@ import Foundation
 import UIKit
 class LocationWeatherDetailsPresenter:LocationWeatherDetailPresenterProtocol {
     var interactor: LocationWeatherDetailInputInteractorProtocol?
-    
-    
     var view: LocationWeatherDetailViewProtocol?
     
     func viewDidLoad() {
-        
+       
     }
-    
+    func fetchWeatherDetails(locationItem: LocationItem) {
+        interactor?.fetchWeatherDetails(locationItem: locationItem)
+    }
     
 }

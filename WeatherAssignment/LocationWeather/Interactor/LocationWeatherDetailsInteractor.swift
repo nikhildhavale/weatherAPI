@@ -8,7 +8,11 @@
 
 import Foundation
 class LocationWeatherDetailsInteractor: LocationWeatherDetailInputInteractorProtocol {
+
     var presenter: LocationWeatherDetailPresenterProtocol?
+    func fetchWeatherDetails(locationItem: LocationItem) {
+        
+    }
     
     
     

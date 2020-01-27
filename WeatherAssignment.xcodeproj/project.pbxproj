@@ -139,6 +139,7 @@
 		AE615F6523DD870F004E8D0A /* WeatherAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				AEFD1EAA23DF2FCB00638F0D /* Forecast */,
 				AE615F6623DD870F004E8D0A /* AppDelegate.swift */,
 				AE615F6823DD870F004E8D0A /* SceneDelegate.swift */,
 				AEDC0F3D23DDCA3A000C8D39 /* Constant.swift */,
@@ -176,12 +177,12 @@
 		AEDC0F3F23DDDF75000C8D39 /* LocationList */ = {
 			isa = PBXGroup;
 			children = (
-				AEDC0F4923DDE3A7000C8D39 /* Protocol */,
-				AEDC0F4A23DDE3C4000C8D39 /* WireFrame */,
-				AEDC0F4623DDE31C000C8D39 /* Entity */,
-				AEDC0F4523DDE2F6000C8D39 /* Interactor */,
-				AEDC0F4123DDDFB8000C8D39 /* Presenter */,
 				AEDC0F4023DDDFA3000C8D39 /* View */,
+				AEDC0F4523DDE2F6000C8D39 /* Interactor */,
+				AEDC0F4923DDE3A7000C8D39 /* Protocol */,
+				AEDC0F4123DDDFB8000C8D39 /* Presenter */,
+				AEDC0F4623DDE31C000C8D39 /* Entity */,
+				AEDC0F4A23DDE3C4000C8D39 /* WireFrame */,
 			);
 			path = LocationList;
 			sourceTree = "<group>";
@@ -248,12 +249,12 @@
 		AEFD1E9A23DE8AA100638F0D /* LocationWeather */ = {
 			isa = PBXGroup;
 			children = (
-				AEFD1EA723DF275800638F0D /* Entity */,
-				F1A2614A23DEA870006F397F /* Presenter */,
-				F1A2614723DEA696006F397F /* WireFrame */,
 				AEFD1E9D23DE8AEC00638F0D /* View */,
-				AEFD1E9B23DE8ABF00638F0D /* Protocol */,
 				F1A2615223DEB066006F397F /* Interactor */,
+				F1A2614A23DEA870006F397F /* Presenter */,
+				AEFD1EA723DF275800638F0D /* Entity */,
+				F1A2614723DEA696006F397F /* WireFrame */,
+				AEFD1E9B23DE8ABF00638F0D /* Protocol */,
 			);
 			path = LocationWeather;
 			sourceTree = "<group>";
@@ -280,6 +281,13 @@
 				AEFD1EA823DF278400638F0D /* WeatherDetails.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		AEFD1EAA23DF2FCB00638F0D /* Forecast */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Forecast;
 			sourceTree = "<group>";
 		};
 		F1A2614723DEA696006F397F /* WireFrame */ = {

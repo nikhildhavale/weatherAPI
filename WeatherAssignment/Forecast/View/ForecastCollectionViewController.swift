@@ -62,7 +62,11 @@ class ForecastCollectionViewController: UICollectionViewController {
         cell.titleLabel.text = titleString
         return cell
     }
-
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        collectionViewLayout.invalidateLayout()
+        collectionView.reloadData()
+    }
     // MARK: UICollectionViewDelegate
 
     /*

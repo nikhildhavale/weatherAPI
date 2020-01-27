@@ -30,6 +30,11 @@ class LocationCollectionViewController: UICollectionViewController,LocationListV
         locationList = locationItem
 
     }
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        collectionViewLayout.invalidateLayout()
+        collectionView.reloadData()
+    }
     /*
     // MARK: - Navigation
 

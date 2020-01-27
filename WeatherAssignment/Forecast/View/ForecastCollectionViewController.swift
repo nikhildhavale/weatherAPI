@@ -54,7 +54,7 @@ class ForecastCollectionViewController: UICollectionViewController {
             let date = Date(timeIntervalSince1970: TimeInterval(dateInt))
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "EEEE"
-            titleString = "\n" + dateFormatter.string(from: date)
+            titleString += "\n" + dateFormatter.string(from: date)
         }
         
         cell.titleLabel.text = titleString

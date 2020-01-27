@@ -20,7 +20,7 @@ class CustomImageView: UIImageView {
     func setImageFromLocal(){
         if let imageId = id {
             if let localURL = FileManager.default.getLocalImageURL(id:imageId){
-                image = UIImage(contentsOfFile:localURL.absoluteString)
+                image = UIImage(contentsOfFile:localURL.path)
                 if image == nil && imageDownloader == nil {
                     imageDownloader = ImageDownloader(id: imageId)
                     imageDownloader?.delegate = self

@@ -15,10 +15,6 @@ protocol  ForecastDetailPresenterProtocol: class {
     func loadForecast(forecastArray:[ForecastResponse])
     
 }
-protocol ForecastDetailInputInteractorProtocol: class {
-    var presenter: ForecastDetailPresenterProtocol? {get set}
-}
-
 protocol ForecastDetailViewProtocol: class {
     //Presenter -> View
     func showForecastDetail(with forecastArray: [ForecastResponse])

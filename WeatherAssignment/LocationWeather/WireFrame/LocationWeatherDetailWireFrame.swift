@@ -11,8 +11,8 @@ import UIKit
 class LocationWeatherDetailWireFrame: LocationWeatherDetailWireFrameProtocol {
     static func createLocationWeatherDetailsModule(locationDetailsRef: LocationWeatherDetailsViewController, with locationItem:LocationItem) {
         let presenter:LocationWeatherDetailPresenterProtocol  = LocationWeatherDetailsPresenter()
-        locationDetailsRef.presenter?.wireframe = LocationWeatherDetailWireFrame()
         locationDetailsRef.presenter = presenter
+        locationDetailsRef.presenter?.wireframe = LocationWeatherDetailWireFrame()
         locationDetailsRef.presenter?.view = locationDetailsRef
         locationDetailsRef.locationItem = locationItem
         locationDetailsRef.presenter?.interactor = LocationWeatherDetailsInteractor()

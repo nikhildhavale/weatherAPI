@@ -11,7 +11,7 @@ import UIKit
 private let reuseIdentifier = "Cell"
 
 class ForecastCollectionViewController: UICollectionViewController {
-
+    var presenter:ForecastDetailPresenterProtocol?
     var forecastArray  = [ForecastResponse]() {
         didSet {
             collectionView?.reloadData()
@@ -19,7 +19,7 @@ class ForecastCollectionViewController: UICollectionViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        presenter?.viewDidLoad()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         registerCell()
@@ -54,6 +54,8 @@ class ForecastCollectionViewController: UICollectionViewController {
             let date = Date(timeIntervalSince1970: TimeInterval(dateInt))
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "EEEE"
+            titleString += "\n" + dateFormatter.string(from: date)
+            dateFormatter.dateFormat = "HH:mm"
             titleString += "\n" + dateFormatter.string(from: date)
         }
         
@@ -92,4 +94,11 @@ class ForecastCollectionViewController: UICollectionViewController {
     }
     */
 
+}
+extension ForecastCollectionViewController:ForecastDetailViewProtocol{
+    func showForecastDetail(with forecastArray: [ForecastResponse]) {
+        self.forecastArray = forecastArray
+    }
+    
+    
 }

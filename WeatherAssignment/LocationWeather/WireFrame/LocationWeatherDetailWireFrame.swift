@@ -7,15 +7,21 @@
 //
 
 import Foundation
+import UIKit
 class LocationWeatherDetailWireFrame: LocationWeatherDetailWireFrameProtocol {
     static func createLocationWeatherDetailsModule(locationDetailsRef: LocationWeatherDetailsViewController, with locationItem:LocationItem) {
         let presenter:LocationWeatherDetailPresenterProtocol  = LocationWeatherDetailsPresenter()
+        locationDetailsRef.presenter?.wireframe = LocationWeatherDetailWireFrame()
         locationDetailsRef.presenter = presenter
         locationDetailsRef.presenter?.view = locationDetailsRef
         locationDetailsRef.locationItem = locationItem
         locationDetailsRef.presenter?.interactor = LocationWeatherDetailsInteractor()
         locationDetailsRef.presenter?.interactor?.presenter = presenter
     }
-    
+    func showForecastDetails(forecastDetailArray:[ForecastResponse] , in view:UIViewController){
+        if let forecastCollectionController = view.children.first as? ForecastCollectionViewController {
+            ForecastWireFrame.createForecastDetailsModule(forecastDetailRef: forecastCollectionController, with: forecastDetailArray)
+        }
+    }
     
 }

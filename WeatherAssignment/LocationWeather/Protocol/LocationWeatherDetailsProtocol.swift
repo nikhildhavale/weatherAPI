@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 protocol LocationWeatherDetailPresenterProtocol: class {
     
- //   var wireframe:LocationWeatherDetailWireFrameProtocol
+    var wireframe:LocationWeatherDetailWireFrameProtocol? {get set}
     var view: LocationWeatherDetailViewProtocol? {get set}
     var interactor: LocationWeatherDetailInputInteractorProtocol? {get set}
     func viewDidLoad()
@@ -31,4 +31,5 @@ protocol LocationWeatherDetailViewProtocol: class {
 }
 
 protocol LocationWeatherDetailWireFrameProtocol: class {
+    func showForecastDetails(forecastDetailArray:[ForecastResponse] , in view:UIViewController)
 }

@@ -48,9 +48,10 @@ extension LocationWeatherDetailsViewController:LocationWeatherDetailViewProtocol
         pressure.attributedText = locationItem.getPressure()
         Humidity.attributedText = locationItem.getHumidity()
         wind.attributedText = locationItem.getWind()
-        if let forecastCollectionController = self.children.first as? ForecastCollectionViewController, let forecastArray = locationItem.weatherInfo?.list {
-            forecastCollectionController.forecastArray = forecastArray
+        if let forecastDetailArray = locationItem.weatherInfo?.list {
+            presenter?.wireframe?.showForecastDetails(forecastDetailArray: forecastDetailArray, in: self)
         }
+        
     }
     
     

@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 class LocationWeatherDetailsPresenter:LocationWeatherDetailPresenterProtocol {
+    var wireframe: LocationWeatherDetailWireFrameProtocol?
+    
     var interactor: LocationWeatherDetailInputInteractorProtocol?
     var view: LocationWeatherDetailViewProtocol?
     

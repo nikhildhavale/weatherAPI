@@ -63,7 +63,7 @@ class LocationWeatherDetailsInteractor: LocationWeatherDetailInputInteractorProt
     var networkSession:NetworkSession?
     var presenter: LocationWeatherDetailPresenterProtocol?
     func fetchWeatherDetails(locationItem: LocationItem) {
-    
+        
         if let locationName = locationItem.name {
             let getURLString = NetworkConstant.baseURL+NetworkConstant.query+locationName+"&"+NetworkConstant.appid
                 networkSession = NetworkSession(completionBlock: {(data) in
@@ -82,7 +82,10 @@ class LocationWeatherDetailsInteractor: LocationWeatherDetailInputInteractorProt
             let jsonDecoder = JSONDecoder()
             let response = try jsonDecoder.decode(WeatherDetailsResponse.self, from: data)
             location.weatherInfo = response
-             self.didFetchWeatherFor(location: location)
+            DispatchQueue.main.async {
+                self.didFetchWeatherFor(location: location)
+
+            }
         }
         catch{
             print(error)

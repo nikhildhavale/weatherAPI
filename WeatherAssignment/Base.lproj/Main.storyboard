@@ -72,10 +72,23 @@
                     <view key="view" contentMode="scaleToFill" id="BdQ-EJ-g6w">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="SDS-EC-1IF">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SDS-EC-1IF" firstAttribute="centerX" secondItem="BdQ-EJ-g6w" secondAttribute="centerX" id="6aU-jh-8qA"/>
+                            <constraint firstItem="SDS-EC-1IF" firstAttribute="centerY" secondItem="BdQ-EJ-g6w" secondAttribute="centerY" id="gJB-sR-LsO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="NCj-iV-QB7"/>
                     </view>
                     <navigationItem key="navigationItem" id="kdr-qw-epW"/>
+                    <connections>
+                        <outlet property="loadingIndicator" destination="SDS-EC-1IF" id="NYR-MW-mfZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hqo-Qf-1X0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

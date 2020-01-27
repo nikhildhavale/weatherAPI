@@ -12,9 +12,11 @@ class LocationWeatherDetailsViewController: UIViewController {
     var locationItem:LocationItem?
     var presenter:LocationWeatherDetailPresenterProtocol?
 
+    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.viewDidLoad()
+        self.title = locationItem?.name
         if let locationItem = locationItem {
             presenter?.fetchWeatherDetails(locationItem: locationItem)
 
@@ -36,7 +38,7 @@ class LocationWeatherDetailsViewController: UIViewController {
 }
 extension LocationWeatherDetailsViewController:LocationWeatherDetailViewProtocol {
     func showLocationWeatherDetail(with locationItem: LocationItem) {
-        
+        loadingIndicator.stopAnimating()
     }
     
     

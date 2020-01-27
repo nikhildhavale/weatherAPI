@@ -11,9 +11,11 @@ import CoreLocation
 import UIKit
 struct WeatherUIConstant {
     static let cellIdentifier = "weatherCell"
+    static let forecastcellIdenfier = "forecastCell"
     static let defaultWeathLocation = CLLocation(latitude: 18.516, longitude: 73.856)
     static let weatherDetailsSegue = "weatherDetailsSegue"
     static let LocationViewCellCollectionViewCell = "LocationViewCellCollectionViewCell"
+    static let ForecastCollectionViewCell = "ForecastCollectionViewCell"
     static let defaultLocationString = "Pune"
 }
 struct NetworkConstant{
